@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+@font-face {
+    font-family: 'pretendo';
+    src: url('/path-to/pretendo.woff2') format('woff2'),
+        url('/path-to/pretendo.woff') format('woff'),
+        url('/path-to/pretendo.ttf') format('truetype');
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'pretendo', sans-serif;
+}
+
+#container {
+    height: 15em;
+    width: 35em;
+    background-color: #d6d2d2;
+    border-radius: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#containerNegro {
+    margin-top: 1.7em;
+    height: 12em;
+    width: 33.5em;
+    background-color: #2c2b2b;
+    border-radius: 0.4em;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#parteIz {
+    height: 10em;
+    width: 10.5em;
+    background-color: #2c2b2b;
+    border-radius: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2em;
+
+}
+
+/* #relleno{
+    height: 2em;
+    width: 1em;
+    background-color: whitesmoke; 
+} */
+#parteCen {
+    height: 12em;
+    width: 10.5em;
+    background-color: #2c2b2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.flechasCaja {
+    height: 1.8em;
+    width: 1.8em;
+    /*  background-color: black; */
+    background-color: #252323c9;
+    border-radius: 0.2em;
+
+
+}
+
+#flechaCe {
+    height: 1.8em;
+    width: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#containerNegro2 {
+    padding-top: 1.2em;
+}
+
+#FlechaCirculo {
+    height: 1.3em;
+    width: 1.3em;
+    border-radius: 50%;
+    background-color: #201e1e;
+
+}
+
+#flechaAl {
+
+    border: 0.2em solid #d6d2d2;
+    border-right: 0;
+
+}
+
+#flechaIz {
+
+    border: 0.2em solid #d6d2d2;
+    border-bottom: 0;
+
+}
+
+#flechaDe {
+
+    border: 0.2em solid #d6d2d2;
+    border-top: 0;
+}
+
+#flechaBa {
+
+    border: 0.2em solid #d6d2d2;
+    border-left: 0;
+
+
+}
+
+#flechaCe {
+    border-right: 0em;
+
+}
+
+.cajasCentrales {
+    height: 1.6em;
+    width: 10em;
+    background-color: #7b7878;
+    border-radius: 0.3em;
+
+}
+
+#cajonBotones {
+    height: 3.1em;
+    width: 10em;
+    border-radius: 0.2em;
+    background-color: #d6d2d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#cajaBotones {
+    height: 2.2em;
+    width: 9.1em;
+    background-color: #d6d2d2;
+    border: 0.2em solid rgb(110, 109, 109);
+    border-radius: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.botonesCentrales {
+    height: 0.88em;
+    width: 2.7em;
+    background-color: #2e2d2d;
+    border-radius: 2.9em;
+}
+
+#cajaletras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    color: #d80718;
+
+}
+
+#cajaletras p {
+    font-size: 0.8em;
+    /* margin-right: 0.8em; */
+    letter-spacing: 0.2em;
+}
+
+#parteDe {
+    height: 12em;
+    width: 14em;
+    background-color: #2c2b2b;
+    border-radius: 0.4em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#cajaLetrasNinten {
+    height: 6.4em;
+    width: 14em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #9f0714;
+    letter-spacing: 0.1em;
+}
+
+#cajaBotonesRojos {
+    height: 4em;
+    width: 14em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.botonesRojos {
+    height: 3.9em;
+    width: 3.6em;
+    background-color: #d6d2d2;
+    border-radius: 0.3em;
+    margin: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rellenoCAjaBotones {
+    height: 3.9em;
+    width: 2em;
+}
+
+#cajaLetrasB {
+    height: 2.2em;
+    width: 14em;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+#cajaLetrasB p {
+    color: #d80718;
+
+}
+
+.letrasBotones {
+    height: 1em;
+    width: 4em;
+
+    display: flex;
+    justify-content: right;
+    margin-right: 1.5em;
+
+}
+
+.circulosRojos {
+    height: 2.8em;
+    width: 2.8em;
+    background-color: #d80718;
+    border-radius: 50%;
+    border: 0.2em solid #1f1e1e;
+
+}
+
+#letraAbotones {
+    margin-right: 1em;
+}
