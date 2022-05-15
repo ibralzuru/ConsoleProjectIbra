@@ -44,14 +44,14 @@ body {
 }
 
 #parteIz {
-    height: 10em;
+    height: 9em;
     width: 10.5em;
     background-color: #464545;
     border-radius: 0.4em;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 2em;
+    padding-top: 3em;
  
 
 }
