@@ -3,12 +3,12 @@
     margin: 0;
 
 }
-
 @font-face {
-    font-family: 'pretendo';
-    src: url('/path-to/pretendo.woff2') format('woff2'),
-        url('/path-to/pretendo.woff') format('woff'),
-        url('/path-to/pretendo.ttf') format('truetype');
+    font-family: "Pretendo";
+    src:
+        url("https://manzdev.github.io/twitch-nintendo-nes/fonts/pretendo.woff2") format("woff2"),
+        url("https://manzdev.github.io/twitch-nintendo-nes/fonts/pretendo.woff") format("woff");
+    font-display: swap;
 }
 
 body {
@@ -30,6 +30,7 @@ body {
     justify-content: center;
 
 }
+/* PARTES DEL MANDO --------------------------------------------------------------- */
 
 #containerNegro {
     margin-top: 1.7em;
@@ -45,20 +46,16 @@ body {
 #parteIz {
     height: 10em;
     width: 10.5em;
-    background-color: #2c2b2b;
+    background-color: #464545;
     border-radius: 0.4em;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 2em;
+ 
 
 }
 
-/* #relleno{
-    height: 2em;
-    width: 1em;
-    background-color: whitesmoke; 
-} */
 #parteCen {
     height: 12em;
     width: 10.5em;
@@ -69,26 +66,16 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-
 }
-
-.flechasCaja {
-    height: 1.8em;
-    width: 1.8em;
-    /*  background-color: black; */
-    background-color: #252323c9;
-    border-radius: 0.2em;
-
-
-}
-
-#flechaCe {
-    height: 1.8em;
-    width: 1.8em;
+#parteDe {
+    height: 12em;
+    width: 14em;
+    background-color: #2c2b2b;
+    border-radius: 0.4em;
     display: flex;
-    align-items: center;
-    justify-content: center;
-
+    flex-direction: column;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
 
 }
 
@@ -96,18 +83,58 @@ body {
     padding-top: 1.2em;
 }
 
-#FlechaCirculo {
-    height: 1.3em;
-    width: 1.3em;
-    border-radius: 50%;
-    background-color: #201e1e;
+/* CAJAS Y FLECHAS DEL CURSOR --------------------------------------------------------------*/
 
+
+.flechasCaja {
+    height: 1.7em;
+    width: 1.7em;
+    background-color: #252323c9;
+    border-radius: 0.2em;
+   /*  background: #252323c9;
+    background: -webkit-linear-gradient(to left, #434343, #000000);
+    background: linear-gradient(to left, #434343, #000000); */
+   
+}
+.flechasCaja:hover {
+    cursor: pointer;
+    height: 1.6em;
+    width: 1.6em;
+    background-color: #252323c9;
+    border-radius: 0.2em;
+    
+}
+
+#flechaCe {
+    height: 1.7em;
+    width: 1.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#FlechaCirculo {
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    background-color: black;
+   
+   
+}
+#flechaCe { 
+    margin: 0em 0em 0em 0.1em;
+    background: #2e2d2d;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
 }
 
 #flechaAl {
 
     border: 0.2em solid #d6d2d2;
     border-right: 0;
+    background: #2e2d2d;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
 
 }
 
@@ -115,6 +142,9 @@ body {
 
     border: 0.2em solid #d6d2d2;
     border-bottom: 0;
+    background: #2e2d2d;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
 
 }
 
@@ -122,20 +152,27 @@ body {
 
     border: 0.2em solid #d6d2d2;
     border-top: 0;
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: center;
+    background: #2e2d2d;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
 }
 
 #flechaBa {
 
     border: 0.2em solid #d6d2d2;
     border-left: 0;
+    background: #2e2d2d;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
 
 
 }
 
-#flechaCe {
-    border-right: 0em;
-
-}
+/* PARTE CENTRAL -------------------------------------------------------------*/
 
 .cajasCentrales {
     height: 1.6em;
@@ -160,7 +197,7 @@ body {
     height: 2.2em;
     width: 9.1em;
     background-color: #d6d2d2;
-    border: 0.2em solid rgb(110, 109, 109);
+    border: 0.12em solid #2d2b2b;
     border-radius: 0.2em;
     display: flex;
     align-items: center;
@@ -173,6 +210,19 @@ body {
     width: 2.7em;
     background-color: #2e2d2d;
     border-radius: 2.9em;
+    background: #2e2d2d;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+  
+
+}
+
+.botonesCentrales:hover {
+
+    height: 0.8em;
+    width: 2.6em;
+    cursor: pointer;
+
 }
 
 #cajaletras {
@@ -181,7 +231,7 @@ body {
     justify-content: center;
     justify-content: space-evenly;
     color: #d80718;
-    
+
 
 }
 
@@ -192,15 +242,7 @@ body {
     font-weight: bold;
 }
 
-#parteDe {
-    height: 12em;
-    width: 14em;
-    background-color: #2c2b2b;
-    border-radius: 0.4em;
-    display: flex;
-    flex-direction: column;
-
-}
+/* PARTE DERECHA----------------------------------------------------------------------------------------- */
 
 #cajaLetrasNinten {
     height: 6.4em;
@@ -209,13 +251,20 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    color: #860c16;
-    
+    color: #960c18;
+
 }
+
 #letrasNinten {
-    
+
     font-size: 1em;
     font-weight: bold;
+}
+
+#marcaRegist {
+    
+    font-size: 0.5em;
+    padding-bottom: 1em;
 }
 
 #cajaBotonesRojos {
@@ -236,6 +285,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 #rellenoCAjaBotones {
@@ -254,8 +304,10 @@ body {
 }
 
 #cajaLetrasB p {
-    color: #d80718;
-    
+    margin-top: 0.3em;
+    color: #9e0613;
+    font-size: 0.8em;
+
 
 }
 
@@ -272,12 +324,27 @@ body {
 .circulosRojos {
     height: 2.8em;
     width: 2.8em;
-    background-color: #d80718;
     border-radius: 50%;
-    border: 0.2em solid #1f1e1e;
+    border: 0.15em solid #1f1e1e;
+    background: #d80718;
+    background: -webkit-linear-gradient(to top, #93291E, #ED213A);
+    background: linear-gradient(to top, #93291E, #ED213A);
+}
+
+.circulosRojos:hover {
+    height: 2.75em;
+    width: 2.75em;
+    background-color: #be0615;
+    border-radius: 50%;
+    border: 0.10em solid #1f1e1e;
+    cursor: pointer;
+    transition: 0.3s;
+
 
 }
 
 #letraAbotones {
-    margin-right: 1em;
+    margin-right: 1.4em;
 }
+
+/* flechas mando */
