@@ -1,4 +1,4 @@
-#Nintendo remote control
+# Nintendo remote control
 ***
 
 #####First project, in which all classmates have to make a video console or their remote control (as is my case).
@@ -7,7 +7,7 @@
 
 
 
-##Installation:
+## Installation:
 
 Click on the following link
 
@@ -16,13 +16,13 @@ https://ibralzuru.github.io/ConsoleProjectIbra/
 ***
 
 
-##Technologies:
+## Technologies:
 
 * Html5
 * CSS
 
 
 ***
-##Collaboration:
+## Collaboration:
 
 The class, the teacher and me.
