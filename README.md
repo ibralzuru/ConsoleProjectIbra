@@ -1,7 +1,7 @@
 # Nintendo remote control
 ***
 
-#####First project, in which all classmates have to make a video console or their remote control (as is my case).
+##### First project, in which all classmates have to make a video console or their remote control (as is my case).
 
 ***
 
